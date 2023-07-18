@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -223,4 +224,231 @@ body {
     color: var(--cloud);
 
 
+=======
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+:root {
+    --iriscolor: #4D5AE5;
+    --navyblue: #2E2F42;
+    --navcolor: black;
+    --oceancolor: #404bbf;
+    --whitecolor: white;
+    --slatecolor: #434455;
+    --cloud: #f4f4fd;
+    --ocean: #404bbf;
+}
+
+/*----Checked----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--slatecolor);
+}
+
+/*-----------------------------------*\
+  #Header
+\*-----------------------------------*/
+/*----Checked----*/
+.logo-link {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+/*----Checked----*/
+.logo {
+    color: var(--iriscolor);
+
+}
+
+/*----Checked----*/
+.studio {
+    color: var(--navyblue);
+
+}
+
+/*----Checked----*/
+.nav-menu.list .page {
+    color: var(--navcolor);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*----Checked----*/
+.list {
+    list-style-type: none;
+}
+
+/*----Checked----*/
+.nav-menu.list .page:hover,
+.nav-menu.list .page:focus,
+.nav-menu.list .page.current,
+.contacts-menu.list .item:hover,
+.contacts-menu.list .item:focus {
+    color: var(--iriscolor);
+}
+
+/*----Checked----*/
+.contacts-menu.list .item {
+    color: var(--slatecolor);
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+/*-----------------------------------*\
+  #Main Section 
+\*-----------------------------------*/
+/*----Checked----*/
+.hero.bg-hero {
+    background-color: var(--navyblue);
+}
+
+/*----Checked----*/
+.bg-team {
+    background-color: var(--cloud);
+}
+
+/*----Checked----*/
+.hero-title {
+    color: var(--whitecolor);
+    font-size: 56px;
+    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.04em;
+}
+
+/*----Checked----*/
+.button {
+    cursor: pointer;
+    border-color: transparent;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+/*----Checked----*/
+.button.primary {
+    background-color: var(--iriscolor);
+    color: var(--whitecolor);
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+/*---- Portfolio----*/
+/*---- Button part----*/
+/*----Checked----*/
+.button.filter {
+    background: var(--cloud);
+    color: var(--iriscolor);
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+    background-color: var(--ocean);
+    color: var(--cloud);
+}
+
+/*----Index part----*/
+/*----Checked----*/
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--oceancolor);
+}
+
+/*----Section 2----*/
+/*----Checked----*/
+.benefits .description {
+    color: var(--slatecolor);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.71;
+}
+
+/*----Checked----*/
+.benefits .title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*----for Section 3 & 4----*/
+/*----Checked----*/
+.section-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+/*----Checked----*/
+.team .name {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+}
+
+/*----Checked----*/
+.team .position {
+    color: var(--slatecolor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*----Checked----*/
+.project {
+    text-decoration: none;
+
+}
+
+/*----Checked----*/
+.project .name {
+    font-size: 20;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--navyblue)
+}
+
+/*----Checked----*/
+.project .type {
+    color: var(--slatecolor);
+    font-weight: 500;
+    line-height: 1.87;
+}
+
+/*----Checked----*/
+.page-footer.bg-footer {
+    background-color: var(--navyblue);
+}
+
+/*----Checked----*/
+.studio-footer {
+    color: var(--cloud);
+
+}
+
+/*----Checked----*/
+.footer-description {
+    color: var(--cloud);
+
+
+>>>>>>> 1d0b9f85bc2d90f53c153a20784c414e558cf85b
 }
