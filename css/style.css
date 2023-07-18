@@ -23,6 +23,17 @@ body {
 /*-----------------------------------*\
   #Header
 \*-----------------------------------*/
+.container .logo-link .nav-menu.list .contacts-menu.list {
+    justify-content: space-around;
+   
+}
+
+.header-navigation {
+    display: flex;
+    margin-left: 7em;
+    
+}
+
 /*----Checked----*/
 .logo-link {
     text-decoration: none;
@@ -31,8 +42,10 @@ body {
     line-height: 1.17;
     font-weight: 800;
     letter-spacing: 0.04em;
-}
+    margin-top: 0.8em;
+   
 
+}
 /*----Checked----*/
 .logo {
     color: var(--iriscolor);
@@ -45,6 +58,12 @@ body {
 
 }
 
+.nav-menu.list {
+    display: flex;
+    flex-direction: row;   
+}
+
+
 /*----Checked----*/
 .nav-menu.list .page {
     color: var(--navcolor);
@@ -52,6 +71,11 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
 }
 
 /*----Checked----*/
@@ -66,8 +90,15 @@ body {
 .contacts-menu.list .item:hover,
 .contacts-menu.list .item:focus {
     color: var(--iriscolor);
+    
 }
 
+.contacts-menu.list {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 7em;
+    
+}
 /*----Checked----*/
 .contacts-menu.list .item {
     color: var(--slatecolor);
@@ -75,6 +106,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    margin-top: 7em;
 }
 
 /*-----------------------------------*\
@@ -145,6 +177,14 @@ body {
 }
 
 /*----Section 2----*/
+.container .benefits {
+    width: 1158px;
+}
+
+.container .filters {
+    width: 1158px;
+}
+
 /*----Checked----*/
 .benefits .description {
     color: var(--slatecolor);
@@ -248,8 +288,12 @@ body {
     }
 
     /*-----------------------------------*\
-  #Header
-\*-----------------------------------*/
+                    #Header
+    \*-----------------------------------*/
+    .page-header {
+        background: var(--cloud);
+    }
+
     /*----Checked----*/
     .logo-link {
         text-decoration: none;
@@ -258,12 +302,12 @@ body {
         line-height: 1.17;
         font-weight: 800;
         letter-spacing: 0.04em;
+        padding: 0%;
     }
 
     /*----Checked----*/
     .logo {
         color: var(--iriscolor);
-
     }
 
     /*----Checked----*/
@@ -280,6 +324,12 @@ body {
         line-height: 1.14;
         letter-spacing: 0.02em;
     }
+
+    .page {
+        justify-content: space-around;
+    }
+
+
 
     /*----Checked----*/
     .list {
@@ -450,5 +500,4 @@ body {
         color: var(--cloud);
 
 
-        >>>>>>>1d0b9f85bc2d90f53c153a20784c414e558cf85b
-    }
+   }
