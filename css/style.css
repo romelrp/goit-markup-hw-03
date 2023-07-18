@@ -1,273 +1,228 @@
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-
 :root {
     --iriscolor: #4D5AE5;
     --navyblue: #2E2F42;
     --navcolor: black;
-    --oceancolor: #2196F3;
+    --oceancolor: #404bbf;
     --whitecolor: white;
     --slatecolor: #434455;
+    --cloud: #f4f4fd;
+    --ocean: #404bbf;
+}
+
+/*----Checked----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: var(--slatecolor);
 }
 
 /*-----------------------------------*\
   #Header
 \*-----------------------------------*/
+/*----Checked----*/
 .logo-link {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.17;
     font-weight: 800;
+    letter-spacing: 0.04em;
 }
 
+/*----Checked----*/
 .logo {
     color: var(--iriscolor);
 
 }
 
+/*----Checked----*/
 .studio {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
 
 }
 
-.navmenu.list .page {
+/*----Checked----*/
+.nav-menu.list .page {
     color: var(--navcolor);
     text-decoration: none;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 1.15;
-    letter-spacing: 0.05em;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
+/*----Checked----*/
 .list {
     list-style-type: none;
 }
 
-.navmenu.list .page:hover,
-.navmenu.list .page:focus,
-.navmenu.list .page.currentoption,
-.contact-menu.list .item:hover,
-.contact-menu.list .item:focus {
-    color: var(--oceancolor);
+/*----Checked----*/
+.nav-menu.list .page:hover,
+.nav-menu.list .page:focus,
+.nav-menu.list .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+    color: var(--iriscolor);
 }
 
+/*----Checked----*/
 .contacts-menu.list .item {
-    color: var(--navcolor);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.15;
-    letter-spacing: 0.05em;
+    color: var(--slatecolor);
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
 
 /*-----------------------------------*\
   #Main Section 
 \*-----------------------------------*/
+/*----Checked----*/
 .hero.bg-hero {
     background-color: var(--navyblue);
-    height: 260px;
-    font-family: Roboto;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
 }
 
-.button-container-div {
-    width: 100%;
-    display: flex;
-    
-
+/*----Checked----*/
+.bg-team {
+    background-color: var(--cloud);
 }
 
-.h1-title {
+/*----Checked----*/
+.hero-title {
     color: var(--whitecolor);
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 1.5;
+    font-size: 56px;
     text-align: center;
-    letter-spacing: 0.05em;
+    line-height: 1.07;
+    letter-spacing: 0.04em;
 }
 
+/*----Checked----*/
 .button {
     cursor: pointer;
     border-color: transparent;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-size: 16px;
 
 }
 
+/*----Checked----*/
 .button.primary {
-    background-color: var(--oceancolor);
+    background-color: var(--iriscolor);
     color: var(--whitecolor);
-    font-weight: 800;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 }
 
 /*---- Portfolio----*/
 /*---- Button part----*/
-.filters.list{
-    display: list-item;
-}
-
-.button.filter.currentoption {
-    background: var(--ocean, #404BBF);
-    color: var(--white, #FFF);
-    text-align: center;
-    display: flex;
-    align-items: flex-start;
-    /* Button Text */
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.64px;
-}
-
+/*----Checked----*/
 .button.filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
-    color: var(--iris, #4D5AE5);
-    text-align: center;
-    /* Button Text */
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
+    background: var(--cloud);
+    color: var(--iriscolor);
     font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.64px;
+    line-height: 1.62;
 }
+
+.button.filter:hover,
+.button.filter:focus,
+button.filter.current {
+    background-color: var(--ocean);
+    color: var(--cloud);
+}
+
 /*----Index part----*/
+/*----Checked----*/
 .button.primary:hover,
 .button.primary:focus {
-    background-color: hotpink;
-}
-/*----Section 2----*/
-.benefits.list{
-    color: var(--navyblue);
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 20px;
+    background-color: var(--oceancolor);
 }
 
-.description {
+/*----Section 2----*/
+/*----Checked----*/
+.benefits .description {
+    color: var(--slatecolor);
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    font-style: normal;
-    font-family: Roboto;
-    
+    line-height: 1.71;
 }
 
-.title {
+/*----Checked----*/
+.benefits .title {
     color: var(--navyblue);
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*----for Section 3 & 4----*/
-.section-title{
-    color: var(--navyblue, #2E2F42);
+/*----Checked----*/
+.section-title {
+    color: var(--navyblue);
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 111.111% */
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
+    line-height: 1.17;
 }
 
-.what.we.do.list{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.team.list{
-    display: inline-flex;
-    padding-bottom: 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-
-}
-.container .name {
-    color: var(--navyblue, #2E2F42);
+/*----Checked----*/
+.team .name {
+    color: var(--navyblue);
     text-align: center;
-    /* Header 3 */
-    font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 120% */
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
 
 }
 
-.position {
-    color: var(--slate, #434455);
+/*----Checked----*/
+.team .position {
+    color: var(--slatecolor);
     text-align: center;
-    /* Body */
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
 }
 
-.project.list {
-    align-items: flex-start;
-    text-decoration: none;
-    font-family: Roboto;
-    
-}
-
+/*----Checked----*/
 .project {
-    color: var(--navyblue, #2E2F42);
-/* Header 3 */
-    font-family: Roboto;
     text-decoration: none;
-    
+
 }
 
+/*----Checked----*/
 .project .name {
-    display: flex;
-    text-align: left;
+    font-size: 20;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--navyblue)
 }
 
+/*----Checked----*/
+.project .type {
+    color: var(--slatecolor);
+    font-weight: 500;
+    line-height: 1.87;
+}
+
+/*----Checked----*/
 .page-footer.bg-footer {
     background-color: var(--navyblue);
 }
 
-.logo {
-    color: var(--iriscolor);
-
-
-}
-
+/*----Checked----*/
 .studio-footer {
-    color: var(--whitecolor);
-
-
+    color: var(--cloud);
 
 }
 
+/*----Checked----*/
 .footer-description {
-    color: var(--whitecolor);
+    color: var(--cloud);
 
 
 }
