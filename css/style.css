@@ -63,8 +63,8 @@ body {
 .nav-menu.list .page:hover,
 .nav-menu.list .page:focus,
 .nav-menu.list .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu.list .item:hover,
+.contacts-menu.list .item:focus {
     color: var(--iriscolor);
 }
 
@@ -132,7 +132,7 @@ body {
 
 .button.filter:hover,
 .button.filter:focus,
-button.filter.current {
+.button.filter.current {
     background-color: var(--ocean);
     color: var(--cloud);
 }
@@ -172,7 +172,6 @@ button.filter.current {
 /*----Checked----*/
 .team .name {
     color: var(--navyblue);
-    text-align: center;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -182,7 +181,6 @@ button.filter.current {
 /*----Checked----*/
 .team .position {
     color: var(--slatecolor);
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
 }
