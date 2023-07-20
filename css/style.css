@@ -21,7 +21,7 @@ body {
     color: var(--slatecolor);
 }
 
-*{
+* {
     list-style: none;
     text-decoration: none;
 }
@@ -31,12 +31,24 @@ body {
 \*-----------------------------------*/
 .page-header {
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    
+
 }
 
 .header-navigation {
     display: flex;
-    align-items: center;
+
+
+}
+
+.header-navigation .logo {
+    display: flex;
+    color: var(--iris, #4D5AE5);
+
+}
+
+.header-navigation .studio {
+    display: flex;
+    color: var(--navyblue, #2E2F42);
 
 }
 
@@ -44,19 +56,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .logo-link {
     display: flex;
     align-items: center;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-left: 2.5em;
 
 }
 
+/*----Checked----*/
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-left: 4em;
 }
 
 .page {
@@ -65,7 +85,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 0.32px;
     padding: 24px 0;
 
@@ -77,57 +97,6 @@ body {
     gap: 40px;
 
 }
-
-/* .header-navigation .contacts-menu.list {
-    justify-content: space-evenly;
-
-} */
-
-/*----Checked----*/
-/* .logo-link {
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: 1.17;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    margin-top: 0.8em;
-    display: flex;
-    align-items: center;
-
-} */
-
-/*----Checked----*/
-/* .logo {
-    color: var(--iriscolor);
-
-} */
-
-/*----Checked----*/
-/* .studio {
-    color: var(--navyblue);
-
-} */
-
-/* .nav-menu.list {
-    display: flex;
-    flex-direction: row;
-} */
-
-
-/*----Checked----*/
-/* .nav-menu.list .page {
-    color: var(--navcolor);
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    flex-direction: row;
-
-
-
-} */
 
 /*----Checked----*/
 .list {
@@ -144,29 +113,6 @@ body {
 
 }
 
-/* .contacts-menu.list {
-    display: flex;
-
-    margin-right: 7em;
-    flex-direction: row-reverse;
-} */
-
-/*----Checked----*/
-/* .contacts-menu.list .item {
-    color: var(--slatecolor);
-    font-weight: 400;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    margin-top: 7em;
-
-} */
-
-/* .item {
-    margin-bottom: 8em;
-
-} */
-
 /*-----------------------------------*\
   #Main Section 
 \*-----------------------------------*/
@@ -181,6 +127,7 @@ body {
     text-align: center;
 
 }
+
 /*----Checked----*/
 .bg-team {
     background-color: var(--cloud);
@@ -224,6 +171,22 @@ body {
 
 /*---- Portfolio----*/
 /*---- Button part----*/
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 24px;
+    
+}
+
+/* .filters .button.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
 /*----Checked----*/
 .button.filter {
     background: var(--cloud);
@@ -236,7 +199,7 @@ body {
 .button.filter:focus,
 .button.filter.current {
     background-color: var(--ocean);
-    
+
 }
 
 /*----Index part----*/
@@ -248,11 +211,14 @@ body {
 }
 
 /*----Section 2----*/
+/*----Checked----*/
 .container {
     margin: 0 auto;
-    width: 1158px;
-    
+    width: 1300px;
+
 }
+
+
 
 .benefits {
     display: flex;
@@ -275,6 +241,15 @@ body {
     color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
+
+}
+
+.what-we-do {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9em;
+
 }
 
 /*----for Section 3 & 4----*/
@@ -286,14 +261,13 @@ body {
     line-height: 1.17;
 }
 
-.what-we-do {
-    display: flex;
-    gap: 24px;
-    
-}
 
 .team {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+
 }
 
 /*----Checked----*/
@@ -302,7 +276,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.02em;
-   
+    text-align: center;
 }
 
 /*----Checked----*/
@@ -310,11 +284,19 @@ body {
     color: var(--slatecolor);
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
+
 }
 
 /*----Checked----*/
 .project {
     text-decoration: none;
+    display: flex;
+padding-bottom: 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 5px;
+flex-shrink: 0;
 
 }
 
@@ -334,264 +316,81 @@ body {
     line-height: 1.87;
 }
 
+.page-footer {
+    display: flex;
+
+}
+
+/* .footer {
+    display: flex;
+   
+} */
+
+.footer .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 9.5em;
+
+}
+
+.footer .footer-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20em;
+}
+
+
 /*----Checked----*/
 .page-footer.bg-footer {
     background-color: var(--navyblue);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 /*----Checked----*/
-.studio-footer {
+/* .logo-link .studio-footer {
     color: var(--cloud);
+    
 
-}
+} */
 
 /*----Checked----*/
 .footer-description {
     color: var(--cloud);
+    display: flex;
+    align-items: center;
+
+}
+
+/* .logo-link .logo {
+    margin-left: 3.5em;
+} */
 
 
-    =======
+/*----Checked----*/
+.logo {
+    color: var(--iriscolor);
+}
 
-    /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-    :root {
-        --iriscolor: #4D5AE5;
-        --navyblue: #2E2F42;
-        --navcolor: black;
-        --oceancolor: #404bbf;
-        --whitecolor: white;
-        --slatecolor: #434455;
-        --cloud: #f4f4fd;
-        --ocean: #404bbf;
-    }
+/*----Checked----*/
+.studio {
+    color: var(--navyblue);
 
-    /*----Checked----*/
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        letter-spacing: 0.03em;
-        color: var(--slatecolor);
-    }
-
-    /*-----------------------------------*\
-                    #Header
-    \*-----------------------------------*/
-    .page-header {
-        background: var(--cloud);
-    }
-
-    /*----Checked----*/
-    .logo-link {
-        text-decoration: none;
-        font-family: "Raleway", sans-serif;
-        font-size: 18px;
-        line-height: 1.17;
-        font-weight: 800;
-        letter-spacing: 0.04em;
-        padding: 0%;
-    }
-
-    /*----Checked----*/
-    .logo {
-        color: var(--iriscolor);
-    }
-
-    /*----Checked----*/
-    .studio {
-        color: var(--navyblue);
-
-    }
-
-    /*----Checked----*/
-    /* .nav-menu.list .page {
-        color: var(--navcolor);
-        text-decoration: none;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-    }
-
-    .page {
-        justify-content: space-around;
-    } */
+}
 
 
-
-    /*----Checked----*/
-    .list {
-        list-style-type: none;
-    }
-
-    /*----Checked----*/
-    .nav-menu.list .page:hover,
-    .nav-menu.list .page:focus,
-    .nav-menu.list .page.current,
-    .contacts-menu.list .item:hover,
-    .contacts-menu.list .item:focus {
-        color: var(--iriscolor);
-    }
-
-    /*----Checked----*/
-    .contacts-menu.list .item {
-        color: var(--slatecolor);
-        font-weight: 400;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-    }
-
-    /*-----------------------------------*\
-  #Main Section 
-\*-----------------------------------*/
-    /*----Checked----*/
-    .hero.bg-hero {
-        background-color: var(--navyblue);
-        
-
-       
-    }
-
-    /*----Checked----*/
-    .bg-team {
-        background-color: var(--cloud);
-    }
-
-    /*----Checked----*/
-    .hero-title {
-        color: var(--whitecolor);
-        font-size: 56px;
-        text-align: center;
-        line-height: 1.07;
-        letter-spacing: 0.04em;
-        justify-content: center;
-    }
-
-    /*----Checked----*/
-    .button {
-        cursor: pointer;
-        border-color: transparent;
-        letter-spacing: 0.03em;
-        font-family: inherit;
-        font-weight: 500;
-        line-height: 1.5;
-        border-radius: 4px;
-        font-size: 16px;
-
-    }
-
-    /*----Checked----*/
-    .button.primary {
-        background-color: var(--iriscolor);
-        color: var(--whitecolor);
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-    }
-
-    /*---- Portfolio----*/
-    /*---- Button part----*/
-    /*----Checked----*/
-    .button.filter {
-        background: var(--cloud);
-        color: var(--iriscolor);
-        font-weight: 500;
-        line-height: 1.62;
-    }
-
-    .button.filter:hover,
-    .button.filter:focus,
-    .button.filter.current {
-        background-color: var(--ocean);
-        color: var(--cloud);
-    }
-
-    /*----Index part----*/
-    /*----Checked----*/
-    .button.primary:hover,
-    .button.primary:focus {
-        background-color: var(--oceancolor);
-    }
-
-    /*----Section 2----*/
-    /*----Checked----*/
-    .benefits .description {
-        color: var(--slatecolor);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.71;
-    }
-
-    /*----Checked----*/
-    .benefits .title {
-        color: var(--navyblue);
-        font-size: 20px;
-        font-weight: 500;
-        text-align: center;
-    
-    }
-
-    /*----for Section 3 & 4----*/
-    /*----Checked----*/
-    .section-title {
-        color: var(--navyblue);
-        text-align: center;
-        font-size: 36px;
-        line-height: 1.17;
-    }
-
-  
-    /*----Checked----*/
-    .team .name {
-        color: var(--navyblue);
-        font-size: 20px;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-
-    }
-
-    /*----Checked----*/
-    .team .position {
-        color: var(--slatecolor);
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    /*----Checked----*/
-    .project {
-        text-decoration: none;
-
-    }
-
-    /*----Checked----*/
-    .project .name {
-        font-size: 20;
-        font-weight: 500;
-        line-height: 2;
-        letter-spacing: 0.04em;
-        color: var(--navyblue)
-    }
-
-    /*----Checked----*/
-    .project .type {
-        color: var(--slatecolor);
-        font-weight: 500;
-        line-height: 1.87;
-    }
-
-    /*----Checked----*/
-    .page-footer.bg-footer {
-        background-color: var(--navyblue);
-    }
-
-    /*----Checked----*/
-    .studio-footer {
-        color: var(--cloud);
-
-    }
-
-    /*----Checked----*/
-    .footer-description {
-        color: var(--cloud);
+/*----Checked----*/
+.list {
+    list-style-type: none;
+}
 
 
-    }
+/*----Checked----*/
+.studio-footer {
+    color: var(--cloud);
+}
